@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAROTTA TANK CONSTRUCTION & SERVICES, C.A. - Proyectos</title>
+    <!-- Carga de Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de la fuente Inter de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Carga de Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Color de fondo claro */
+        }
+        /* Estilos personalizados para el efecto de desplazamiento suave */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Estilo para los botones de CTA */
+        .btn-primary {
+            @apply bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105;
+        }
+        .btn-secondary {
+            @apply bg-gray-200 text-gray-800 px-6 py-3 rounded-lg shadow-md hover:bg-gray-300 transition duration-300 ease-in-out transform hover:scale-105;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Barra de Navegación (Header) -->
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo de la empresa -->
+            <a href="index.html" class="text-2xl font-bold text-blue-800">
+                MAROTTA <span class="text-gray-600 text-lg">TANK</span>
+            </a>
+            <!-- Menú de Navegación (Desktop) -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Inicio</a></li>
+                <li><a href="nosotros.html" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Nosotros</a></li>
+                <li><a href="servicios.html" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Servicios</a></li>
+                <li><a href="proyectos.html" class="text-blue-600 font-medium transition duration-300">Proyectos</a></li>
+                <li><a href="tecnologia.html" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Tecnología</a></li>
+                <li><a href="calidad-seguridad.html" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Calidad y Seguridad</a></li>
+                <li><a href="contacto.html" class="btn-primary text-sm py-2 px-4">Contacto</a></li>
+            </ul>
+            <!-- Botón de Menú para Móviles (Hamburger) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Menú Móvil (oculto por defecto) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 shadow-inner">
+            <ul class="flex flex-col items-center space-y-3">
+                <li><a href="index.html" class="block py-2 text-gray-700 hover:bg-gray-100 w-full text-center">Inicio</a></li>
+                <li><a href="nosotros.html" class="block py-2 text-gray-700 hover:bg-gray-100 w-full text-center">Nosotros</a></li>
+                <li><a href="servicios.html" class="block py-2 text-gray-700 hover:bg-gray-100 w-full text-center">Servicios</a></li>
+                <li><a href="proyectos.html" class="block py-2 text-blue-600 hover:bg-gray-100 w-full text-center">Proyectos</a></li>
+                <li><a href="tecnologia.html" class="block py-2 text-gray-700 hover:bg-gray-100 w-full text-center">Tecnología</a></li>
+                <li><a href="calidad-seguridad.html" class="block py-2 text-gray-700 hover:bg-gray-100 w-full text-center">Calidad y Seguridad</a></li>
+                <li><a href="contacto.html" class="block py-2 text-blue-600 hover:bg-blue-50 w-full text-center">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Sección Proyectos -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-800 mb-12">Proyectos que Construyen Confianza</h1>
+            <p class="max-w-3xl mx-auto text-lg leading-relaxed text-gray-700 mb-12">
+                Descubre la calidad y el alcance de nuestro trabajo a través de algunos de nuestros proyectos más destacados. Cada proyecto es un testimonio de nuestra experiencia, compromiso y capacidad para entregar resultados excepcionales.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tarjeta de Proyecto 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:scale-105">
+                    <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Proyecto+Tanque+Crudo" alt="Imagen de Proyecto de Tanque de Crudo" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Construcción Tanque de Almacenamiento</h3>
+                        <p class="text-gray-600 text-sm mb-3">Tipo de Servicio: Construcción de Tanques</p>
+                        <p class="text-gray-700 text-base">Diseño y construcción de un tanque de almacenamiento de crudo de gran capacidad para una refinería en el occidente del país, cumpliendo con los estándares API 650.</p>
+                    </div>
+                </div>
+                <!-- Tarjeta de Proyecto 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:scale-105">
+                    <img src="https://placehold.co/600x400/10b981/ffffff?text=Proyecto+Obra+Civil" alt="Imagen de Proyecto de Obra Civil" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Rehabilitación de Plataforma Industrial</h3>
+                        <p class="text-gray-600 text-sm mb-3">Tipo de Servicio: Obra Civil y Mantenimiento</p>
+                        <p class="text-gray-700 text-base">Rehabilitación integral de la infraestructura de una plataforma industrial, incluyendo cimentaciones, estructuras de concreto y vialidad interna, mejorando la operatividad.</p>
+                    </div>
+                </div>
+                <!-- Tarjeta de Proyecto 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:scale-105">
+                    <img src="https://placehold.co/600x400/ef4444/ffffff?text=Proyecto+Modernización" alt="Imagen de Proyecto de Modernización" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Modernización de Sistemas de Bombeo</h3>
+                        <p class="text-gray-600 text-sm mb-3">Tipo de Servicio: Modernización de Equipos</p>
+                        <p class="text-gray-700 text-base">Actualización y optimización de los sistemas de bombeo en una planta de procesamiento para mejorar eficiencia energética, reducir costos operativos y aumentar la seguridad.</p>
+                    </div>
+                </div>
+                <!-- Tarjeta de Proyecto 4 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:scale-105">
+                    <img src="https://placehold.co/600x400/6366f1/ffffff?text=Proyecto+Vialidad" alt="Imagen de Proyecto de Vialidad" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Construcción de Vialidad Interna</h3>
+                        <p class="text-gray-600 text-sm mb-3">Tipo de Servicio: Obras Civiles</p>
+                        <p class="text-gray-700 text-base">Desarrollo y construcción de una red vial interna completa para un complejo industrial, incluyendo sistemas de drenaje, señalización y pavimentación de alta resistencia.</p>
+                    </div>
+                </div>
+                <!-- Tarjeta de Proyecto 5 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:scale-105">
+                    <img src="https://placehold.co/600x400/f97316/ffffff?text=Proyecto+Estructuras" alt="Imagen de Proyecto de Estructuras Metálicas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Montaje de Estructuras Metálicas</h3>
+                        <p class="text-gray-600 text-sm mb-3">Tipo de Servicio: Construcción Industrial</p>
+                        <p class="text-gray-700 text-base">Montaje de estructuras metálicas complejas para naves industriales y soportes de equipos, garantizando precisión y seguridad en la ejecución.</p>
+                    </div>
+                </div>
+                <!-- Tarjeta de Proyecto 6 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:scale-105">
+                    <img src="https://placehold.co/600x400/84cc16/ffffff?text=Proyecto+Inspeccion" alt="Imagen de Proyecto de Inspección Técnica" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Inspección y Certificación de Tanques</h3>
+                        <p class="text-gray-600 text-sm mb-3">Tipo de Servicio: Supervisión y Mantenimiento</p>
+                        <p class="text-gray-700 text-base">Servicios de inspección técnica y certificación de tanques de almacenamiento según normativas API 653, asegurando su integridad y cumplimiento regulatorio.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="contacto.html" class="btn-secondary mt-12 inline-block">Solicita una Cotización</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-2">MAROTTA TCS</h3>
+                    <p class="text-sm">Ingeniería de Vanguardia para un Futuro Sólido.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="hover:text-blue-200 transition duration-300">Inicio</a>
+                    <a href="servicios.html" class="hover:text-blue-200 transition duration-300">Servicios</a>
+                    <a href="proyectos.html" class="hover:text-blue-200 transition duration-300">Proyectos</a>
+                    <a href="contacto.html" class="hover:text-blue-200 transition duration-300">Contacto</a>
+                </div>
+            </div>
+            <p class="text-sm border-t border-blue-700 pt-6 mt-6">
+                &copy; 2025 MAROTTA TANK CONSTRUCTION & SERVICES, C.A. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script para el menú móvil -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Ocultar el menú móvil al hacer clic en un enlace
+        document.querySelectorAll('#mobile-menu a').forEach(item => {
+            item.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

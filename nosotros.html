@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAROTTA TANK CONSTRUCTION & SERVICES, C.A. - Nosotros</title>
+    <!-- Carga de Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de la fuente Inter de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Carga de Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Color de fondo claro */
+        }
+        /* Estilos personalizados para el efecto de desplazamiento suave */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Estilo para los botones de CTA */
+        .btn-primary {
+            @apply bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105;
+        }
+        .btn-secondary {
+            @apply bg-gray-200 text-gray-800 px-6 py-3 rounded-lg shadow-md hover:bg-gray-300 transition duration-300 ease-in-out transform hover:scale-105;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Barra de Navegación (Header) -->
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo de la empresa -->
+            <a href="index.html" class="text-2xl font-bold text-blue-800">
+                MAROTTA <span class="text-gray-600 text-lg">TANK</span>
+            </a>
+            <!-- Menú de Navegación (Desktop) -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Inicio</a></li>
+                <li><a href="nosotros.html" class="text-blue-600 font-medium transition duration-300">Nosotros</a></li>
+                <li><a href="servicios.html" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Servicios</a></li>
+                <li><a href="proyectos.html" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Proyectos</a></li>
+                <li><a href="tecnologia.html" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Tecnología</a></li>
+                <li><a href="calidad-seguridad.html" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Calidad y Seguridad</a></li>
+                <li><a href="contacto.html" class="btn-primary text-sm py-2 px-4">Contacto</a></li>
+            </ul>
+            <!-- Botón de Menú para Móviles (Hamburger) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Menú Móvil (oculto por defecto) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 shadow-inner">
+            <ul class="flex flex-col items-center space-y-3">
+                <li><a href="index.html" class="block py-2 text-gray-700 hover:bg-gray-100 w-full text-center">Inicio</a></li>
+                <li><a href="nosotros.html" class="block py-2 text-blue-600 hover:bg-gray-100 w-full text-center">Nosotros</a></li>
+                <li><a href="servicios.html" class="block py-2 text-gray-700 hover:bg-gray-100 w-full text-center">Servicios</a></li>
+                <li><a href="proyectos.html" class="block py-2 text-gray-700 hover:bg-gray-100 w-full text-center">Proyectos</a></li>
+                <li><a href="tecnologia.html" class="block py-2 text-gray-700 hover:bg-gray-100 w-full text-center">Tecnología</a></li>
+                <li><a href="calidad-seguridad.html" class="block py-2 text-gray-700 hover:bg-gray-100 w-full text-center">Calidad y Seguridad</a></li>
+                <li><a href="contacto.html" class="block py-2 text-blue-600 hover:bg-blue-50 w-full text-center">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Sección Nosotros -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-800 mb-12">Nuestra Trayectoria y Compromiso</h1>
+            <div class="max-w-4xl mx-auto text-lg leading-relaxed text-gray-700">
+                <p class="mb-6">
+                    MAROTTA TANK CONSTRUCTION & SERVICES, C.A. es una empresa con una sólida trayectoria en el sector de la ingeniería, construcción, mantenimiento y modernización de obras e infraestructura. Fundada con la visión de ser un pilar en el desarrollo industrial y civil, hemos crecido y evolucionado, adaptándonos a las necesidades del mercado y superando los desafíos con soluciones innovadoras.
+                </p>
+                <p class="mb-6">
+                    Nuestra experiencia abarca desde la concepción y diseño de proyectos complejos hasta su ejecución y posterior mantenimiento, siempre con un enfoque en la eficiencia, la seguridad y la sostenibilidad. Nos enorgullece el impacto positivo que generamos en cada proyecto, contribuyendo al progreso de las comunidades y la infraestructura del país.
+                </p>
+
+                <h2 class="text-3xl font-bold text-blue-800 mt-16 mb-8">Misión, Visión y Valores</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div class="p-6 bg-blue-50 rounded-lg shadow-md text-left">
+                        <h3 class="text-2xl font-semibold text-blue-800 mb-3"><i class="fas fa-bullseye text-blue-600 mr-2"></i>Nuestra Misión</h3>
+                        <p class="text-gray-700 text-base">
+                            Ofrecer soluciones de ingeniería, construcción y servicios integrales de la más alta calidad, superando las expectativas de nuestros clientes y contribuyendo al desarrollo sostenible de la infraestructura.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-blue-50 rounded-lg shadow-md text-left">
+                        <h3 class="text-2xl font-semibold text-blue-800 mb-3"><i class="fas fa-eye text-blue-600 mr-2"></i>Nuestra Visión</h3>
+                        <p class="text-gray-700 text-base">
+                            Ser la empresa líder en ingeniería y construcción, reconocida por nuestra innovación, excelencia operativa y el impacto positivo en las comunidades y el entorno.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-blue-800 mb-6">Nuestros Valores Fundamentales</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-6 bg-blue-50 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <i class="fas fa-handshake text-4xl text-blue-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Integridad</h3>
+                        <p class="text-gray-600 text-sm">Transparencia y ética en todas nuestras operaciones, construyendo relaciones de confianza.</p>
+                    </div>
+                    <div class="p-6 bg-blue-50 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <i class="fas fa-award text-4xl text-blue-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Excelencia</h3>
+                        <p class="text-gray-600 text-sm">Compromiso con la calidad y los más altos estándares en cada detalle de nuestro trabajo.</p>
+                    </div>
+                    <div class="p-6 bg-blue-50 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <i class="fas fa-shield-alt text-4xl text-blue-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Seguridad</h3>
+                        <p class="text-gray-600 text-sm">Prioridad máxima en la protección de nuestro personal, el medio ambiente y las comunidades.</p>
+                    </div>
+                    <div class="p-6 bg-blue-50 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <i class="fas fa-lightbulb text-4xl text-blue-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Innovación</h3>
+                        <p class="text-gray-600 text-sm">Búsqueda constante de nuevas tecnologías y metodologías para soluciones eficientes.</p>
+                    </div>
+                    <div class="p-6 bg-blue-50 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <i class="fas fa-users text-4xl text-blue-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-blue-800 mb-2">Compromiso</h3>
+                        <p class="text-gray-600 text-sm">Dedicación total a la satisfacción del cliente y el cumplimiento de los objetivos del proyecto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-2">MAROTTA TCS</h3>
+                    <p class="text-sm">Ingeniería de Vanguardia para un Futuro Sólido.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="hover:text-blue-200 transition duration-300">Inicio</a>
+                    <a href="servicios.html" class="hover:text-blue-200 transition duration-300">Servicios</a>
+                    <a href="proyectos.html" class="hover:text-blue-200 transition duration-300">Proyectos</a>
+                    <a href="contacto.html" class="hover:text-blue-200 transition duration-300">Contacto</a>
+                </div>
+            </div>
+            <p class="text-sm border-t border-blue-700 pt-6 mt-6">
+                &copy; 2025 MAROTTA TANK CONSTRUCTION & SERVICES, C.A. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script para el menú móvil -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Ocultar el menú móvil al hacer clic en un enlace
+        document.querySelectorAll('#mobile-menu a').forEach(item => {
+            item.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

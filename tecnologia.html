@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAROTTA TANK CONSTRUCTION & SERVICES, C.A. - Tecnología</title>
+    <!-- Carga de Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de la fuente Inter de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Carga de Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Color de fondo claro */
+        }
+        /* Estilos personalizados para el efecto de desplazamiento suave */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Estilo para los botones de CTA */
+        .btn-primary {
+            @apply bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105;
+        }
+        .btn-secondary {
+            @apply bg-gray-200 text-gray-800 px-6 py-3 rounded-lg shadow-md hover:bg-gray-300 transition duration-300 ease-in-out transform hover:scale-105;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Barra de Navegación (Header) -->
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo de la empresa -->
+            <a href="index.html" class="text-2xl font-bold text-blue-800">
+                MAROTTA <span class="text-gray-600 text-lg">TANK</span>
+            </a>
+            <!-- Menú de Navegación (Desktop) -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="index.html" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Inicio</a></li>
+                <li><a href="nosotros.html" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Nosotros</a></li>
+                <li><a href="servicios.html" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Servicios</a></li>
+                <li><a href="proyectos.html" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Proyectos</a></li>
+                <li><a href="tecnologia.html" class="text-blue-600 font-medium transition duration-300">Tecnología</a></li>
+                <li><a href="calidad-seguridad.html" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Calidad y Seguridad</a></li>
+                <li><a href="contacto.html" class="btn-primary text-sm py-2 px-4">Contacto</a></li>
+            </ul>
+            <!-- Botón de Menú para Móviles (Hamburger) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Menú Móvil (oculto por defecto) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 shadow-inner">
+            <ul class="flex flex-col items-center space-y-3">
+                <li><a href="index.html" class="block py-2 text-gray-700 hover:bg-gray-100 w-full text-center">Inicio</a></li>
+                <li><a href="nosotros.html" class="block py-2 text-gray-700 hover:bg-gray-100 w-full text-center">Nosotros</a></li>
+                <li><a href="servicios.html" class="block py-2 text-gray-700 hover:bg-gray-100 w-full text-center">Servicios</a></li>
+                <li><a href="proyectos.html" class="block py-2 text-gray-700 hover:bg-gray-100 w-full text-center">Proyectos</a></li>
+                <li><a href="tecnologia.html" class="block py-2 text-blue-600 hover:bg-gray-100 w-full text-center">Tecnología</a></li>
+                <li><a href="calidad-seguridad.html" class="block py-2 text-gray-700 hover:bg-gray-100 w-full text-center">Calidad y Seguridad</a></li>
+                <li><a href="contacto.html" class="block py-2 text-blue-600 hover:bg-blue-50 w-full text-center">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Sección Tecnología y Capacidades -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-800 mb-12">Innovación y Capacidad Técnica</h1>
+            <p class="max-w-3xl mx-auto text-lg leading-relaxed text-gray-700 mb-12">
+                En MAROTTA TANK CONSTRUCTION & SERVICES, C.A., invertimos constantemente en tecnología de punta y en el desarrollo de las capacidades de nuestro equipo para garantizar soluciones eficientes y de vanguardia en cada proyecto.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Capacidad 1: Equipamiento Moderno -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-robot text-5xl text-blue-600 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-2">Equipamiento Moderno</h3>
+                    <p class="text-gray-700 text-base">Contamos con maquinaria pesada de última generación, grúas de alto tonelaje, equipos de soldadura especializados y herramientas de medición de precisión para la ejecución de proyectos complejos.</p>
+                </div>
+                <!-- Capacidad 2: Metodologías Avanzadas -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-project-diagram text-5xl text-blue-600 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-2">Metodologías Avanzadas</h3>
+                    <p class="text-gray-700 text-base">Aplicamos metodologías de gestión de proyectos probadas (como PMI) y utilizamos software de diseño asistido por computadora (CAD) y Building Information Modeling (BIM) para una planificación y ejecución óptimas.</p>
+                </div>
+                <!-- Capacidad 3: Talento Humano Calificado -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-users-cog text-5xl text-blue-600 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-2">Talento Humano Calificado</h3>
+                    <p class="text-gray-700 text-base">Nuestro equipo está compuesto por ingenieros, técnicos y personal altamente capacitado y certificado en diversas disciplinas, con experiencia en proyectos de gran envergadura.</p>
+                </div>
+                <!-- Capacidad 4: Laboratorio y Pruebas -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-flask text-5xl text-blue-600 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-2">Laboratorio y Pruebas</h3>
+                    <p class="text-gray-700 text-base">Disponemos de equipos para realizar pruebas no destructivas (NDT) y ensayos de materiales, asegurando la integridad y durabilidad de nuestras construcciones.</p>
+                </div>
+                <!-- Capacidad 5: Soluciones Personalizadas -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-cogs text-5xl text-blue-600 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-2">Soluciones Personalizadas</h3>
+                    <p class="text-gray-700 text-base">Desarrollamos soluciones de ingeniería a medida, adaptándonos a los requerimientos específicos de cada cliente y las particularidades de cada proyecto.</p>
+                </div>
+                <!-- Capacidad 6: Sostenibilidad y Eficiencia -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-leaf text-5xl text-blue-600 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-2">Sostenibilidad y Eficiencia</h3>
+                    <p class="text-gray-700 text-base">Integramos prácticas sostenibles y tecnologías eficientes en nuestros diseños y procesos constructivos para minimizar el impacto ambiental y optimizar el uso de recursos.</p>
+                </div>
+            </div>
+            <a href="contacto.html" class="btn-primary mt-12 inline-block">Habla con Nuestros Expertos</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-2">MAROTTA TCS</h3>
+                    <p class="text-sm">Ingeniería de Vanguardia para un Futuro Sólido.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="hover:text-blue-200 transition duration-300">Inicio</a>
+                    <a href="servicios.html" class="hover:text-blue-200 transition duration-300">Servicios</a>
+                    <a href="proyectos.html" class="hover:text-blue-200 transition duration-300">Proyectos</a>
+                    <a href="contacto.html" class="hover:text-blue-200 transition duration-300">Contacto</a>
+                </div>
+            </div>
+            <p class="text-sm border-t border-blue-700 pt-6 mt-6">
+                &copy; 2025 MAROTTA TANK CONSTRUCTION & SERVICES, C.A. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script para el menú móvil -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Ocultar el menú móvil al hacer clic en un enlace
+        document.querySelectorAll('#mobile-menu a').forEach(item => {
+            item.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
